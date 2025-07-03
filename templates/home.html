@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Pesquisa Cantina - Início{% endblock %}
+
+{% block content %}
+<header class="bg-green-700 text-white p-6 shadow rounded">
+  <h1 class="text-3xl font-bold text-center">Pesquisa Cantina da Faculdade</h1>
+</header>
+
+<main class="flex-grow flex items-center justify-center py-10">
+  <div class="text-center space-y-6 max-w-lg p-6 bg-white rounded shadow">
+    <p class="text-lg text-gray-700">
+      Ajude-nos a melhorar a cantina da sua faculdade respondendo à pesquisa sobre suas preferências e restrições alimentares.
+    </p>
+    <a href="{{ url_for('formulario') }}"
+       class="inline-block bg-green-600 hover:bg-green-800 text-white font-semibold py-3 px-6 rounded shadow transition">
+      Responder Pesquisa
+    </a>
+  </div>
+</main>
+{% endblock %}
